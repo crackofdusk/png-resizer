@@ -1,0 +1,22 @@
+[root]
+name = "png-resizer"
+version = "0.0.1"
+dependencies = [
+ "stb_image 0.1.0 (git+https://github.com/servo/rust-stb-image.git)",
+ "stb_image_resize 0.0.1",
+ "stb_image_write 0.0.1",
+]
+
+[[package]]
+name = "stb_image"
+version = "0.1.0"
+source = "git+https://github.com/servo/rust-stb-image.git#c84d5c3d1e0c5579331b7cad86c7011a73f74944"
+
+[[package]]
+name = "stb_image_resize"
+version = "0.0.1"
+
+[[package]]
+name = "stb_image_write"
+version = "0.0.1"
+

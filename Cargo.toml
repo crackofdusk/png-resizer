@@ -1,0 +1,14 @@
+[package]
+
+name = "png-resizer"
+version = "0.0.1"
+authors = ["Dimiter Petrov <crackofdusk@gmail.com>"]
+
+[dependencies.stb_image_resize]
+path = "components/stb_image_resize"
+
+[dependencies.stb_image_write]
+path = "components/stb_image_write"
+
+[dependencies.stb_image]
+git = "https://github.com/servo/rust-stb-image.git"

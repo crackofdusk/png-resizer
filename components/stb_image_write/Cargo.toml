@@ -1,0 +1,8 @@
+[package]
+
+name = "stb_image_write"
+version = "0.0.1"
+authors = ["Dimiter Petrov <crackofdusk@gmail.com>"]
+
+build = "make -f makefile.cargo"
+

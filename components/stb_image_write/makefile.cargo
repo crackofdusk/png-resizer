@@ -1,0 +1,14 @@
+CC ?= gcc
+AR ?= ar
+
+CFLAGS += -fPIC
+
+.PHONY: all
+
+all: $(OUT_DIR)/libstb-image-write.a
+
+$(OUT_DIR)/stb_image_write.o: src/stb_image_write.c
+	$(CC) $< -o $@ -c $(CFLAGS)
+
+$(OUT_DIR)/libstb-image-write.a: $(OUT_DIR)/stb_image_write.o
+	$(AR) rcs $@ $^
